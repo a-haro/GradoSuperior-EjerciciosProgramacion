@@ -49,4 +49,53 @@ public class Bucles {
             num = sc.nextInt();
         }
     }
+    public void ex5(){
+        System.out.println("Introduce un número: ");
+        int num = sc.nextInt();
+        int counter = 0;
+
+        while(num > 0){
+            counter++;
+            System.out.println("Introduce un número: ");
+            num = sc.nextInt();
+        }
+        System.out.println("Se han introducido " + counter + " números.");
+    }
+    public void ex6(){
+        System.out.println("Introduce un número: ");
+        int num = sc.nextInt();
+        int total = 0;
+
+        while (num != 0){
+            total += num;
+            System.out.println("Introduce un número: ");
+            num = sc.nextInt();
+        }
+        System.out.println("El total es " + total);
+    }
+    public void ex7(){
+        System.out.println("Introduce un número: ");
+        int num = sc.nextInt();
+        double total = 0;
+        int counter = 0;
+        while (num != 0){
+            counter++;
+            total += num;
+            System.out.println("Introduce un número: ");
+            num = sc.nextInt();
+        }
+        System.out.println("La media es: " + total/counter);
+    }
+    public void ex8(){
+        System.out.println("Introduce un número: ");
+        int a = sc.nextInt();
+        int resultado = 1;
+
+        for (int i = 0; i < a; i++){
+            if (i % 2 != 0){
+                resultado *= i;
+            }
+        }
+        System.out.println("La multiplicación de los números impares es: " + resultado);
+    }
 }
