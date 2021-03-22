@@ -98,4 +98,22 @@ public class Bucles {
         }
         System.out.println("La multiplicación de los números impares es: " + resultado);
     }
+    public void ex9(){
+        int counter = 0;
+        int numOcult = 3;
+        System.out.println("Introduce un número: ");
+        int numUsuari = sc.nextInt();
+        while(numUsuari != numOcult){
+            if(numUsuari > numOcult){
+                System.out.println("El número introducido es mayor al oculto.");
+            } else {
+                System.out.println("El número introducido es menor al oculto.");
+            }
+            System.out.println("Introduce un número: ");
+            numUsuari = sc.nextInt();
+            counter++;
+        }
+        System.out.println("¡Has acertado!");
+        System.out.println("Intentos: " + counter);
+    }
 }

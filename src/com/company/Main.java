@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Bucles bucles = new Bucles();
-        bucles.ex8();
+        bucles.ex9();
     }
     public static void crearPersona(Persona persona){
         Persona persona1 = new Persona("Antonio", 12, 13423222, "Varón", 655999442);
